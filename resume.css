@@ -1,11 +1,23 @@
+/* font define */
+@font-face {
+  font-family: Linux Libertine O;
+  src: url("/fonts/Libertine/LinLibertine_R.otf");
+}
+
 body {
     color: #000000;
     background: #EEEEEE;
-    font: 1.1em "Times New Roman";
     line-height: 1.2;
     margin: 40px 0;
 }
+footer {
+    text-align: center;
+    font-size: smaller;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 #resume {
+    font-family: 'Linux Libertine O', 'Times New Roman', 'Noto Serif SC', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
     margin: 0 auto;
     max-width: 800px;
     padding: 40px 60px;
@@ -30,6 +42,7 @@ h2 {
 }
 h3 {
     font-size: 100%;
+    font-weight: normal;
     margin: 0.8em 0 0.3em 0;
     padding: 0;
     display: flex;
@@ -64,6 +77,15 @@ h1 + ul > li:last-child:after {
 h1 + ul + p {
     margin: 1em 0;
 }
+
+/* a datedline style */
+datedline {
+    margin-right: -30px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 @media print {
     body {
         font-size: 10pt;

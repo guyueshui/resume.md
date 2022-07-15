@@ -9,6 +9,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 
 import markdown
 
@@ -20,6 +21,7 @@ preamble = """\
 <style>
 {css}
 </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
 </head>
 <body>
 <div id="resume">
@@ -28,6 +30,9 @@ preamble = """\
 postamble = """\
 </div>
 </body>
+<footer>
+Last modified at {time_str}.
+</footer>
 </html>
 """
 
@@ -113,7 +118,7 @@ def make_html(md: str, prefix: str = "resume") -> str:
         (
             preamble.format(title=title(md), css=css),
             markdown.markdown(md, extensions=["smarty"]),
-            postamble,
+            postamble.format(time_str=time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         )
     )
 
@@ -179,6 +184,12 @@ if __name__ == "__main__":
         nargs="?",
     )
     parser.add_argument(
+        "css",
+        help="css file",
+        default="resume",
+        nargs="?",
+    )
+    parser.add_argument(
         "--no-html",
         help="Do not write html output",
         action="store_true",
@@ -207,7 +218,7 @@ if __name__ == "__main__":
 
     with open(args.file, encoding="utf-8") as mdfp:
         md = mdfp.read()
-    html = make_html(md, prefix=prefix)
+    html = make_html(md, prefix=args.css)
 
     if not args.no_html:
         with open(prefix + ".html", "w", encoding="utf-8") as htmlfp:
