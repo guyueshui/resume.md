@@ -117,7 +117,7 @@ def make_html(md: str, prefix: str = "resume") -> str:
     return "".join(
         (
             preamble.format(title=title(md), css=css),
-            markdown.markdown(md, extensions=["smarty"]),
+            markdown.markdown(md, extensions=["smarty", "abbr"]),
             postamble.format(time_str=time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         )
     )
@@ -130,6 +130,7 @@ def write_pdf(html: str, prefix: str = "resume", chrome: str = "") -> None:
     chrome = chrome or guess_chrome_path()
     html64 = base64.b64encode(html.encode("utf-8"))
     options = [
+        "--no-sandbox",
         "--headless",
         "--print-to-pdf-no-header",
         "--enable-logging=stderr",
