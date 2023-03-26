@@ -29,16 +29,17 @@ adaptive variants. -->
 
 <!-- You have to wrap the "left" and "right" half of these headings in spans by
 hand -->
-### <span>**半监督生成对抗网络（在研）**</span> <span>2019.02 -- 至今</span>
+### <span>**基于生成对抗网络的分类模型研究**</span> <span>2019.02 -- 2020.02</span>
 
-基于[文章1](https://papers.nips.cc/paper/6399-infogan-interpretable-representation-learning-by-information-maximizing-generative-adversarial-nets.pdf)以及[文章2](https://arxiv.org/pdf/1707.04487.pdf)，从信息论的角度探究输入噪声的分布情况对生成器性能的影响，从而
-指导设计出更好的噪声分布，提升网络的性能，并尝试从信息论的角度解释参数的意义和模型合理性。
+基于[文章1](https://papers.nips.cc/paper/6399-infogan-interpretable-representation-learning-by-information-maximizing-generative-adversarial-nets.pdf)以及[文章2](https://arxiv.org/pdf/1707.04487.pdf)，从信息论的角度探究输入噪声的分布情况对生成器性能的影响，从而指导设计出更好的噪声分布，提升网络的性能，并尝试从信息论的角度解释参数的意义和模型合理性。
+
+- 发表文章：[基于互信息约束的生成对抗网络分类模型研究. 中国科学院大学学报. 2021 Jun 1:75.](http://journal.ucas.ac.cn/CN/10.7523/j.ucas.2020.0037)
+- 代码地址：[github](https://github.com/guyueshui/InfoCatGAN)
 
 
 ### <span>**使用深度学习模型预测基因表达量的高低**</span> <span>2018.10 -- 2019.01</span>
 
-在NIPS2017的[文章](https://papers.nips.cc/paper/7255-attend-and-predict-understanding-gene-regulation-by-selective-attention-on-chromatin.pdf)基础上，复现了其主要工作。使用 bedtools 和 samtools 将原始的生物大数据
-提取出组蛋白修饰信号与基因表达的对应关系。使用 CNN 训练获得权重，输出分类结果。
+在NIPS2017的[文章](https://papers.nips.cc/paper/7255-attend-and-predict-understanding-gene-regulation-by-selective-attention-on-chromatin.pdf)基础上，复现了其主要工作。使用 bedtools 和 samtools 将原始的生物大数据提取出组蛋白修饰信号与基因表达的对应关系。使用 CNN 训练获得权重，输出分类结果。
 
 数据预处理是该文章实现的难点。从数据的下载、剪接，到有效信息的提取，接触并动手写了一些 Shell 和 Python 脚本。
 
@@ -48,7 +49,7 @@ hand -->
 
 ## 工作经历
 
-### <span>**网易（杭州）网络有限技术公司**  杭州</span> <span>2020.08 -- 至今</span>
+### <span>**网易（杭州）网络有限技术公司**  杭州</span> <span>2020.08 -- 2023.01</span>
 
 *Starry 工作室，游戏研发工程师*
 
@@ -89,6 +90,8 @@ hand -->
 - <datedline><span>上海科技大学 SSIST 国际会议志愿者 </span> <span>2018.07</span></datedline>
 - <datedline><span>上海科技大学 SWILD 国际会议志愿者</span> <span>2018.06</span></datedline>
 - <datedline><span>SI140 概率论与数理统计本科生助教</span> <span>2017 年秋</span></datedline>
+- <datedline><span>武汉理工大学优秀毕业生</span> <span>2017.05</span></datedline>
+- <datedline><span>武汉理工大学国家励志奖学金（连续三年）</span> <span>2014 -- 2016</span></datedline>
 - <datedline><span>武汉理工大学校级三好学生</span> <span>2015.11</span></datedline>
+- <datedline><span>武汉理工大学院级三好学生</span> <span>2014.11</span></datedline>
 - <datedline><span>华中地区大学生数学建模邀请赛三等奖</span> <span>2015.05</span></datedline>
-- <datedline><span>武汉理工大学国家励志奖学金</span> <span>2014, 2015</span></datedline>
