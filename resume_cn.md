@@ -5,7 +5,7 @@
 line. It is intended to be used for contact details -->
 - <guyueyizhi@qq.com>
 - [guyueshui.github.io](https://guyueshui.github.io)
-- 杭州
+- 南京
 
 <!-- The paragraph after the h1 and ul and before the first h2 is optional. It
 is intended to be used for a short summary. -->
@@ -31,15 +31,14 @@ adaptive variants. -->
 hand -->
 ### <span>**基于生成对抗网络的分类模型研究**</span> <span>2019.02 -- 2020.02</span>
 
-基于[文章1](https://papers.nips.cc/paper/6399-infogan-interpretable-representation-learning-by-information-maximizing-generative-adversarial-nets.pdf)以及[文章2](https://arxiv.org/pdf/1707.04487.pdf)，从信息论的角度探究输入噪声的分布情况对生成器性能的影响，从而指导设计出更好的噪声分布，提升网络的性能，并尝试从信息论的角度解释参数的意义和模型合理性。
+基于[文章 1](https://papers.nips.cc/paper/6399-infogan-interpretable-representation-learning-by-information-maximizing-generative-adversarial-nets.pdf) 以及[文章 2](https://arxiv.org/pdf/1707.04487.pdf)，从信息论的角度探究输入噪声的分布情况对生成器性能的影响，从而指导设计出更好的噪声分布，提升网络的性能，并尝试从信息论的角度解释参数的意义和模型合理性。发表文章：
 
-- 发表文章：[基于互信息约束的生成对抗网络分类模型研究. 中国科学院大学学报. 2021 Jun 1:75.](http://journal.ucas.ac.cn/CN/10.7523/j.ucas.2020.0037)
-- 代码地址：[github](https://github.com/guyueshui/InfoCatGAN)
+- [基于互信息约束的生成对抗网络分类模型研究](http://journal.ucas.ac.cn/CN/10.7523/j.ucas.2020.0037) [[Github](https://github.com/guyueshui/InfoCatGAN)]
 
 
 ### <span>**使用深度学习模型预测基因表达量的高低**</span> <span>2018.10 -- 2019.01</span>
 
-在NIPS2017的[文章](https://papers.nips.cc/paper/7255-attend-and-predict-understanding-gene-regulation-by-selective-attention-on-chromatin.pdf)基础上，复现了其主要工作。使用 bedtools 和 samtools 将原始的生物大数据提取出组蛋白修饰信号与基因表达的对应关系。使用 CNN 训练获得权重，输出分类结果。
+在 NIPS2017 的[文章](https://papers.nips.cc/paper/7255-attend-and-predict-understanding-gene-regulation-by-selective-attention-on-chromatin.pdf)基础上，复现了其主要工作。使用 bedtools 和 samtools 将原始的生物大数据提取出组蛋白修饰信号与基因表达的对应关系。使用 CNN 训练获得权重，输出分类结果。
 
 数据预处理是该文章实现的难点。从数据的下载、剪接，到有效信息的提取，接触并动手写了一些 Shell 和 Python 脚本。
 
@@ -65,13 +64,19 @@ hand -->
 
 - 商城、物品拆解、维修、委托等游戏功能
 
+### <span>**华为技术有限公司**  南京</span> <span>2023.04 -- 至今</span>
+
+*ICT 产品与解决方案，NCE 分析开发部*
+
+完成了 GRE（Generic Routing Encapsulation）拨测业务 Golang 到 C++ 的转换，端到端梳理了业务流程，分析并拆解了 Golang 代码；输出相应 C++ 版本的替代方案，进行方案澄清；开发过程中为避免引入三方库，自行开发了简单的日志模块、单生产者--单消费者循环队列、对象池，进行穿刺验证。
+
 ## 实习经历
 
 ### <span>**盛趣游戏**   上海</span> <span>2019.07 -- 2019.09</span>
 
 *服务器引擎部，游戏开发实习生* 学习了 Asio、Protobuf、Cmake 等工具。会用 Asio 写基本的网络程序，会用 pb 封装自定义消息，会用 cmake 实现自动化构建。期间也学习了 Unix 系统网络 API，会调用系统 API 进行简单的 socket 编程。
 
-### <span>**顽岩资产** 上海</span> <span>2019年夏</span>
+### <span>**顽岩资产** 上海</span> <span>2019 年夏</span>
 
 *软件开发实习生* 实习期间学习了综合交易平台 CTP 的工作机制，API 的调用以及数据的获取。并类比尝试使用比特币交易平台火币网 API 获取行情数据，转换成自己所需的格式。
 
